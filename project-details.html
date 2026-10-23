@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details - FreelanceHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="freelancers.html">Freelancers</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    
+  </header>
+
+  <main>
+
+<section class="details-section">
+  <a href="projects.html" class="back-link">&larr; Back to Projects</a>
+  <div id="project-details"></div>
+
+  <div class="proposal-section" id="proposal-section">
+    <h2>Submit a Proposal</h2>
+
+    <form id="proposal-form" novalidate>
+
+      <div class="form-group">
+        <label for="proposal-name">Your Name</label>
+        <input type="text" id="proposal-name" placeholder="e.g. Jane Doe">
+        <small class="error-message" id="proposal-name-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="proposal-email">Contact Email</label>
+        <input type="email" id="proposal-email" placeholder="e.g. jane@email.com">
+        <small class="error-message" id="proposal-email-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="proposal-budget">Expected Budget ($)</label>
+        <input type="number" id="proposal-budget" placeholder="e.g. 900">
+        <small class="error-message" id="proposal-budget-error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="proposal-letter">Cover Letter</label>
+        <textarea id="proposal-letter" rows="6" placeholder="Tell the client why you are the right person for this project..."></textarea>
+        <small class="error-message" id="proposal-letter-error"></small>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit Proposal</button>
+    </form>
+
+    <div class="proposal-success" id="proposal-success" style="display: none;">
+      Your proposal has been submitted successfully! The client will review it soon.
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>FreelanceHub</h3>
+        <p>Connecting clients with talented freelancers. Post a project, find your match, get it done.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="freelancers.html">Freelancers</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: hello@freelancehub.com</p>
+        <p>Phone: +254 700 000 000</p>
+        <p>Location: Remote, Worldwide</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="copyright">&copy; 2026 FreelanceHub. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

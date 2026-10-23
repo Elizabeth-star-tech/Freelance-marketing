@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancers - FreelanceHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="freelancers.html">Freelancers</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Find Freelancers</h1>
+      <p>Hire talented professionals for your next project</p>
+    </section>
+
+    <section class="listing-section">
+
+      <div class="filter-bar">
+        <input type="text" id="freelancer-search" placeholder="Search freelancers by skill...">
+
+        <select id="level-filter">
+          <option value="all">All Levels</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Expert">Expert</option>
+        </select>
+      </div>
+
+      <p id="freelancer-count" class="result-count"></p>
+
+      <div class="card-grid" id="freelancer-list"></div>
+
+      <p id="no-freelancers" class="no-results" style="display: none;">
+        No freelancers match your search. Try a different skill or level.
+      </p>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>FreelanceHub</h3>
+        <p>Connecting clients with talented freelancers. Post a project, find your match, get it done.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="freelancers.html">Freelancers</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: hello@freelancehub.com</p>
+        <p>Phone: +254 700 000 000</p>
+        <p>Location: Remote, Worldwide</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="copyright">&copy; 2026 FreelanceHub. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

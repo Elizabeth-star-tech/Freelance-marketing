@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - FreelanceHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Freelance<span>Hub</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="freelancers.html">Freelancers</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <h1>Browse Projects</h1>
+    <p>Find the right project for your skills</p>
+  </section>
+
+  <section class="listing-section">
+
+    <div class="filter-bar">
+      <input type="text" id="search-input" placeholder="Search projects by title...">
+
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Graphic Design">Graphic Design</option>
+        <option value="Content Writing">Content Writing</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="Mobile Apps">Mobile Apps</option>
+        <option value="Video Editing">Video Editing</option>
+      </select>
+
+      <select id="budget-filter">
+        <option value="all">Any Budget</option>
+        <option value="low">Under $500</option>
+        <option value="mid">$500 - $1,500</option>
+        <option value="high">Above $1,500</option>
+      </select>
+    </div>
+
+    <p id="result-count" class="result-count"></p>
+
+    <div class="card-grid" id="project-list"></div>
+
+    <p id="no-results" class="no-results" style="display: none;">
+      No projects match your search. Try changing the filters.
+    </p>
+
+  </section>
+
+</main>
+
+   <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>FreelanceHub</h3>
+      <p>Connecting clients with talented freelancers. Post a project, find your match, get it done.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="freelancers.html">Freelancers</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: hello@freelancehub.com</p>
+      <p>Phone: +254 700 000 000</p>
+      <p>Location: Remote, Worldwide</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="copyright">&copy; 2026 FreelanceHub. All rights reserved.</p>
+</footer>
+
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
